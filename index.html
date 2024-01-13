@@ -6,7 +6,7 @@
       id="stylesheet"
       rel="stylesheet"
       type="text/css"
-      href="https://unpkg.com/chimeracss@1.4.1/build/chimera.css"
+      href='https://unpkg.com/chimeracss/build/chimera.css'
     />
     <script>
       function changeStylesheet(cssFile) {
@@ -25,7 +25,7 @@
           max-width: 90%;
         }
       }
-      
+
       #unimplemented-container {
         display: none;
       }
@@ -124,6 +124,9 @@
         <label for="name">Name:</label><br>
         <input type="text" id="name" name="name"><br>
 
+        <label>disabled:</label><br>
+        <input disabled type="email" id="email" name="email" value="example@example.com"><br>
+
         <label for="email">Email:</label><br>
         <input type="email" id="email" name="email"><br>
 
@@ -162,6 +165,7 @@
         </checkbox>
 
         <input type="submit" value="Submit">
+        <button disabled>Disabled button</button>
       </form>
 
     <h1>Code and formatted text</h1>
