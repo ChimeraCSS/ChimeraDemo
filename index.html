@@ -19,6 +19,10 @@
         margin: auto;
         padding: 1em;
       }
+
+      #unimplemented-container {
+        display: none;
+      }
     </style>
   </head>
   <body>
@@ -191,92 +195,92 @@
 
     <h1>Unimplemented elements</h1>
     <p>
-        Below are some elements that are not implemented yet, but will be in the future.
+        There are some elements that are not implemented yet, but will be in the future.
         This section can be very useful for testing when contributing to chimera!
         At the same time this means that the demo of the implemented framework is finished and you can stop reading if you want.
     </p>
-    <p>
-        You can scroll to the top of the page by clicking the button below.
-    </p>
     <button onclick="window.scrollTo(0, 0);">Scroll to top</button>
-    <hr>
-    <p>
-        <strong>strong</strong>
-        <b>b</b>
-        <em>em</em>
-        <italic>italic</italic>
-        <underline>underline</underline>
-        <strike>strike</strike>
-        <del>del</del>
-        <s>s</s>
-        <ins>ins</ins>
-        <mark>mark</mark>
-        <small>small</small>
-        <sub>sub</sub>
-        <sup>sup</sup>
-        <abbr>abbr</abbr>
-        <address>address</address>
-        <bdi>bdi</bdi>
-        <bdo>bdo</bdo>
-        <cite>cite</cite>
-        <q>q</q>
-        <dfn>dfn</dfn>
-        <data>data</data>
-        <time>time</time>
-        <ruby>ruby</ruby>
-        <rt>rt</rt>
-        <rp>rp</rp>
-    </p>
-      <figcaption>Hello, world!</figcaption>
-      <label for="favcolor">Select your favorite color:</label>
-        <input type="color" id="favcolor" name="favcolor">
-        <label for="myfile">Select a file:</label>
-        <input type="file" id="myfile" name="myfile">
-        <label for="volume">Volume control:</label>
-        <input type="range" id="volume" name="volume" min="0" max="10">
-        <label for="week">Select a week:</label>
-        <input type="week" id="week" name="week">
-´        <label for="birthmonth">Enter your birth month and year:</label>
-        <input type="month" id="birthmonth" name="birthmonth">
-        <input type="hidden" id="userid" name="userid" value="123456">
-        <input type="image" src="submit.png" alt="Submit" width="48" height="48">
-        <select>
-            <optgroup label="Swedish Cars">
-                <option value="volvo">Volvo</option>
-                <option value="saab">Saab</option>
-            </optgroup>
-            <optgroup label="German Cars">
-                <option value="mercedes">Mercedes</option>
-                <option value="audi">Audi</option>
-            </optgroup>
-        </select>
-        <datalist>
-            <option value="Volvo">
-            <option value="Saab">
-            <option value="Mercedes">
-            <option value="Audi">
-        </datalist>
-        <fieldset>
-            <legend>Personalia:</legend>
-            Name: <input type="text"><br>
-            Email: <input type="text"><br>
-            Date of birth: <input type="text">
-        </fieldset>
-        <output>2048</output>
-        <progress></progress>
-        <meter></meter>
-        <details>
-            <summary>Click me to see more</summary>
-            <p>Here is some more text</p>
-        </details>
-        <dialog>
-            <p>Hello world</p>
-            <p>Hi coder</p>
-        </dialog>
-        <menu>
-            <menuitem label="HTML"></menuitem>
-            <menuitem label="CSS"></menuitem>
-            <menuitem label="JavaScript"></menuitem>
-        </menu>
+    <button onclick="var x = document.getElementById('unimplemented-container'); if (x.style.display === 'none') { x.style.display = 'block'; } else { x.style.display = 'none'; }">Toggle unimplemented elements</button>
+    <div id="unimplemented-container">
+        <hr>
+        <p>
+            <strong>strong</strong>
+            <b>b</b>
+            <em>em</em>
+            <italic>italic</italic>
+            <underline>underline</underline>
+            <strike>strike</strike>
+            <del>del</del>
+            <s>s</s>
+            <ins>ins</ins>
+            <mark>mark</mark>
+            <small>small</small>
+            <sub>sub</sub>
+            <sup>sup</sup>
+            <abbr>abbr</abbr>
+            <address>address</address>
+            <bdi>bdi</bdi>
+            <bdo>bdo</bdo>
+            <cite>cite</cite>
+            <q>q</q>
+            <dfn>dfn</dfn>
+            <data>data</data>
+            <time>time</time>
+            <ruby>ruby</ruby>
+            <rt>rt</rt>
+            <rp>rp</rp>
+        </p>
+          <figcaption>Hello, world!</figcaption>
+          <label for="favcolor">Select your favorite color:</label>
+            <input type="color" id="favcolor" name="favcolor">
+            <label for="myfile">Select a file:</label>
+            <input type="file" id="myfile" name="myfile">
+            <label for="volume">Volume control:</label>
+            <input type="range" id="volume" name="volume" min="0" max="10">
+            <label for="week">Select a week:</label>
+            <input type="week" id="week" name="week">
+    ´        <label for="birthmonth">Enter your birth month and year:</label>
+            <input type="month" id="birthmonth" name="birthmonth">
+            <input type="hidden" id="userid" name="userid" value="123456">
+            <input type="image" src="submit.png" alt="Submit" width="48" height="48">
+            <select>
+                <optgroup label="Swedish Cars">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                </optgroup>
+                <optgroup label="German Cars">
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                </optgroup>
+            </select>
+            <datalist>
+                <option value="Volvo">
+                <option value="Saab">
+                <option value="Mercedes">
+                <option value="Audi">
+            </datalist>
+            <fieldset>
+                <legend>Personalia:</legend>
+                Name: <input type="text"><br>
+                Email: <input type="text"><br>
+                Date of birth: <input type="text">
+            </fieldset>
+            <output>2048</output>
+            <progress></progress>
+            <meter></meter>
+            <details>
+                <summary>Click me to see more</summary>
+                <p>Here is some more text</p>
+            </details>
+            <dialog>
+                <p>Hello world</p>
+                <p>Hi coder</p>
+            </dialog>
+            <menu>
+                <menuitem label="HTML"></menuitem>
+                <menuitem label="CSS"></menuitem>
+                <menuitem label="JavaScript"></menuitem>
+            </menu>
+    </div>
   </body>
 </html>
